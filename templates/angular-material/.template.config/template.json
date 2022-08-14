@@ -1,0 +1,62 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Paul Irwin",
+    "classifications": ["Web"],
+    "name": "f23-angular-material",
+    "shortName": "f23-angular-material",
+    "defaultName": "AngularMaterialWebApp",
+    "identity": "F23.SpaTemplates.AngularMaterial",
+    "tags": {
+      "language": "C#",
+      "type": "project"
+    },
+    "sourceName": "AngularMaterialWebApp",
+    "preferNameDirectory": true,
+    "symbols": {
+      "HttpsPort": {
+        "type": "parameter",
+        "datatype": "integer",
+        "description": "Port number to use for the HTTPS endpoint in launchSettings.json."
+      },
+      "HttpsPortGenerated": {
+        "type": "generated",
+        "generator": "port",
+        "parameters": {
+          "low": 44300,
+          "high": 44399
+        }
+      },
+      "HttpsPortReplacer": {
+        "type": "generated",
+        "generator": "coalesce",
+        "parameters": {
+          "sourceVariableName": "HttpsPort",
+          "fallbackVariableName": "HttpsPortGenerated"
+        },
+        "replaces": "7239"
+      },
+      "ProxyPort": {
+        "type": "parameter",
+        "datatype": "integer",
+        "description": "Port number to use for the Angular CLI proxy server."
+      },
+      "ProxyPortGenerated": {
+        "type": "generated",
+        "generator": "port",
+        "parameters": {
+          "low": 42300,
+          "high": 42399
+        }
+      },
+      "ProxyPortReplacer": {
+        "type": "generated",
+        "generator": "coalesce",
+        "parameters": {
+          "sourceVariableName": "ProxyPort",
+          "fallbackVariableName": "ProxyPortGenerated"
+        },
+        "replaces": "4200"
+      }
+    }
+  }
+  
