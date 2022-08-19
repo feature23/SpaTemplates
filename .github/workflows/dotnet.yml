@@ -1,0 +1,33 @@
+name: .NET
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v2
+      with:
+        dotnet-version: 6.0.x
+    - name: Install template
+      run: dotnet new --install .
+    - name: Create output folder
+      run: mkdir output && cd output
+    - name: Instantiate template
+      run: dotnet new f23-angular-material
+    - name: Build generated .NET code
+      run: dotnet build
+    - name: npm ci
+      run: cd ClientApp && npm ci
+    - name: npm audit
+      run: npm audit
+    - name: npm run build
+      run: npm run build
