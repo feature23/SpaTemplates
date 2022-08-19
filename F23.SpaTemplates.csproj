@@ -8,8 +8,8 @@
     <Authors>feature[23]</Authors>
     <Description>Templates for creating ASP.NET Core Single-Page-App web applications with Angular.</Description>
     <PackageTags>dotnet-new;templates;feature23</PackageTags>
-    <TargetFramework>netstandard2.0</TargetFramework>
-
+    <TargetFramework>net6.0</TargetFramework>
+    <NoDefaultExcludes>true</NoDefaultExcludes>
     <IncludeContentInPack>true</IncludeContentInPack>
     <IncludeBuildOutput>false</IncludeBuildOutput>
     <ContentTargetFolders>content</ContentTargetFolders>

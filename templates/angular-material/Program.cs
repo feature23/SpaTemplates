@@ -45,7 +45,7 @@ app.UseSpa(spa => {
     if (app.Environment.IsDevelopment())
     {
         // Dev note: start Angular server by running `npm start` from the ClientApp folder
-        spa.UseProxyToSpaDevelopmentServer("http://localhost:4500");
+        spa.UseProxyToSpaDevelopmentServer("http://localhost:4200");
     }
 });
 
