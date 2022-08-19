@@ -20,14 +20,19 @@ jobs:
     - name: Install template
       run: dotnet new --install .
     - name: Create output folder
-      run: mkdir output && cd output
+      run: mkdir output
     - name: Instantiate template
       run: dotnet new f23-angular-material
+      working-directory: output
     - name: Build generated .NET code
       run: dotnet build
+      working-directory: output
     - name: npm ci
-      run: cd ClientApp && npm ci
+      run: npm ci
+      working-directory: output/ClientApp
     - name: npm audit
       run: npm audit
+      working-directory: output/ClientApp
     - name: npm run build
       run: npm run build
+      working-directory: output/ClientApp
