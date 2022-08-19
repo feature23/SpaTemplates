@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <PackageType>Template</PackageType>
-    <PackageVersion>1.0.0</PackageVersion>
+    <PackageVersion>1.0.1</PackageVersion>
     <PackageId>F23.SpaTemplates</PackageId>
     <Title>feature[23] ASP.NET Core SPA Templates</Title>
     <Authors>feature[23]</Authors>
@@ -14,6 +14,7 @@
     <IncludeBuildOutput>false</IncludeBuildOutput>
     <ContentTargetFolders>content</ContentTargetFolders>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <ProjectUrl>https://github.com/feature23/SpaTemplates</ProjectUrl>
   </PropertyGroup>
 
   <ItemGroup>
