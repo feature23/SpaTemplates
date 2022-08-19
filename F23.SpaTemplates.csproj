@@ -14,12 +14,15 @@
     <IncludeBuildOutput>false</IncludeBuildOutput>
     <ContentTargetFolders>content</ContentTargetFolders>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <ProjectUrl>https://github.com/feature23/SpaTemplates</ProjectUrl>
+    <PackageProjectUrl>https://github.com/feature23/SpaTemplates</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/feature23/SpaTemplates</RepositoryUrl>
+    <PackageIcon>logo.png</PackageIcon>
   </PropertyGroup>
 
   <ItemGroup>
     <Content Include="templates\**\*" Exclude="templates\**\bin\**;templates\**\obj\**;templates\**\.angular;templates\**\dist;templates\**\node_modules" />
     <Compile Remove="**\*" />
+    <None Include="logo.png" Pack="true" PackagePath="\"/>
   </ItemGroup>
 
 </Project>
