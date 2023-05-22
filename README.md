@@ -12,7 +12,7 @@ dotnet new --install F23.SpaTemplates
 
 ### f23-angular-material
 
-This template is a minimal ASP.NET Core 6 app with Angular v14 and Angular Material.
+This template is a minimal ASP.NET Core 6 app with Angular v16 and Angular Material.
 
 How does this compare to the `dotnet new angular` template in .NET 6?
 
